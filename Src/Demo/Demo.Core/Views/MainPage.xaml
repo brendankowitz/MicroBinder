@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+					   x:Class="Demo.Core.Views.MainPage"
+                        xmlns:micro="clr-namespace:MicroBinder.Events;assembly=MicroBinder">
+  <StackLayout>
+    <Label Text="Hi" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Button Text="Hi button" micro:ItemToViewModel.Event="ButtonClicked_Clicked($sender$)"></Button>
+  </StackLayout>
+
+</ContentPage>
